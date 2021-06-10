@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Jan 2021, 12:28:52 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.brainmentors.orm.User" table="user_mst">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="pwd" type="java.lang.String">
+            <column name="PWD" length="20" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>
