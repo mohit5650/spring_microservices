@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="scripts/add.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id='message'></div>
+        <h1 class="alert-info text-center">
+            Expense Management App
+        </h1>
+        <div class="form-group">
+            <label for="">Id</label>
+            <input id='id' type="text" class='form-control' placeholder="Type Id Here">
+        </div>
+
+        <div class="form-group">
+            <label for="">Name</label>
+            <input id='name' type="text" class='form-control' placeholder="Type Name Here">
+        </div>
+        <div class="form-group">
+            <label for="">Cost</label>
+            <input id='cost' type="range" class='form-range' >
+        </div>
+        <div class="form-group">
+            <label for="">Descr</label>
+            <textarea id='desc' class='form-control' cols="30" rows="5" placeholder="Type Desc Here"></textarea>
+        </div>
+        <br/>
+        <button onclick="add()" class='btn btn-primary'>Add</button>
+    </div>
+</body>
+</html>
